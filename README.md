@@ -1,9 +1,9 @@
-# 🐱 Meowchine — Interactive Robotic Cat
+# Meowchine — Interactive Robotic Cat
 
 An interactive, cat-personality desk robot built on an ESP32, combining expressive
 animatronics, proximity-based reactions, and real-time joystick/keyboard control.
 
-**Team:** Afif Bin Zaman & Ismat Erena Siddiquee
+**Team:** Ismat Erena Siddiquee and Afif Bin Zaman 
 **Codename:** Meowchine
 
 > This project is being uploaded separately to both team members' GitHub accounts.
@@ -164,5 +164,5 @@ pip install pyserial keyboard pygame
 
 ## Credits
 
-Built by **Afif Bin Zaman** and **Ismat Erena Siddiquee** as an equal collaboration —
+Built by **Ismat Erena Siddiquee** and **Afif Bin Zaman** as an equal collaboration —
 hardware assembly, firmware, and control software were developed together.
