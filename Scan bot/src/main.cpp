@@ -52,5 +52,14 @@ void drawEyes(int eyeHeight, int pupilOffsetX = 0) {
   display.display();
 }
 
+void drawHappy() {
+  display.clearDisplay();
+  display.fillRoundRect(20, 30, 30, 10, 5, SSD1306_WHITE);
+  display.fillRoundRect(78, 30, 30, 10, 5, SSD1306_WHITE);
+  display.drawLine(40, 50, 64, 56, SSD1306_WHITE);
+  display.drawLine(64, 56, 88, 50, SSD1306_WHITE);
+  display.display();
+}
+
 
 
