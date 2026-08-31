@@ -61,5 +61,14 @@ void drawHappy() {
   display.display();
 }
 
+void drawSurprised() {
+  display.clearDisplay();
+  display.fillCircle(35, 32, 16, SSD1306_WHITE);
+  display.fillCircle(93, 32, 16, SSD1306_WHITE);
+  display.display();
+}
+
+void drawSleepy() { drawEyes(6); }
+
 
 
