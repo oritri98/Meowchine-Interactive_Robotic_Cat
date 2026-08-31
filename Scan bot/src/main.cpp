@@ -42,5 +42,15 @@ int eyeOffsetX = 0;
 
 unsigned long randomBlinkInterval() { return random(2000, 5000); }
 
+void drawEyes(int eyeHeight, int pupilOffsetX = 0) {
+  display.clearDisplay();
+  int leftEyeX = 24 + pupilOffsetX;
+  int rightEyeX = 82 + pupilOffsetX;
+  int eyeY = 32 - (eyeHeight / 2);
+  display.fillRoundRect(leftEyeX, eyeY, 26, eyeHeight, 8, SSD1306_WHITE);
+  display.fillRoundRect(rightEyeX, eyeY, 26, eyeHeight, 8, SSD1306_WHITE);
+  display.display();
+}
+
 
 
