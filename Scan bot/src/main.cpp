@@ -42,7 +42,31 @@ int eyeOffsetX = 0;
 
 unsigned long randomBlinkInterval() { return random(2000, 5000); }
 
+void drawEyes(int eyeHeight, int pupilOffsetX = 0) {
+  display.clearDisplay();
+  int leftEyeX = 24 + pupilOffsetX;
+  int rightEyeX = 82 + pupilOffsetX;
+  int eyeY = 32 - (eyeHeight / 2);
+  display.fillRoundRect(leftEyeX, eyeY, 26, eyeHeight, 8, SSD1306_WHITE);
+  display.fillRoundRect(rightEyeX, eyeY, 26, eyeHeight, 8, SSD1306_WHITE);
+  display.display();
+}
 
+void drawHappy() {
+  display.clearDisplay();
+  display.fillRoundRect(20, 30, 30, 10, 5, SSD1306_WHITE);
+  display.fillRoundRect(78, 30, 30, 10, 5, SSD1306_WHITE);
+  display.drawLine(40, 50, 64, 56, SSD1306_WHITE);
+  display.drawLine(64, 56, 88, 50, SSD1306_WHITE);
+  display.display();
+}
+
+void drawSurprised() {
+  display.clearDisplay();
+  display.fillCircle(35, 32, 16, SSD1306_WHITE);
+  display.fillCircle(93, 32, 16, SSD1306_WHITE);
+  display.display();
+}
 
 void drawSleepy() { drawEyes(6); }
 
