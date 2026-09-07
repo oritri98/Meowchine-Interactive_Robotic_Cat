@@ -22,3 +22,13 @@ joystick.init()
 print(f"Connected to: {joystick.get_name()}")
 print("Press 'Back' on the controller to quit.")
 
+# 3. Main Event Loop
+clock = pygame.time.Clock()
+running = True
+
+# 3. Main Event Loop
+clock = pygame.time.Clock()
+running = True
+
+# A deadzone prevents tiny stick drifts from making the robot jitter
+DEADZONE = 0.5 
