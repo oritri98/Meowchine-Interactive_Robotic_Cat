@@ -16,3 +16,9 @@ pygame.joystick.init()
 if pygame.joystick.get_count() == 0:
     print("No controller found. Please plug it in!")
     exit()
+
+joystick = pygame.joystick.Joystick(0)
+joystick.init()
+print(f"Connected to: {joystick.get_name()}")
+print("Press 'Back' on the controller to quit.")
+
